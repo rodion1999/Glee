@@ -1,9 +1,84 @@
 @import "vars";
 @import "fonts";
 @import "reset";
-@import "glogal";
+@import "global";
 
+.header{
+   padding: 55px 0;
+   @extend %rubik-500;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo{
+    display: flex;
+    align-items: center;
+  }
+  &__logo-text{
+    font-size: 36px;
+    padding-left: 18px;
+    color: $accent;
+  }
+}
 
+.menu{
+  &__list{
+    display: flex;
+  }
+  &__list-item + .menu__list-item{
+    padding-left: 35px;
+  }
+  &__list-link{
+    
+    line-height: 12px;
+    color: $accent;
+  }
+}
+.user-nav{
+  display: flex;
+  align-items: center;
+ 
+  &__box{
+    display: flex; 
+    justify-content:space-around ;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 180px;
+    height: 48px;
+    background-color: #fcd7b6;
+    margin-left: 22px;
+    margin-right: 18px;
+  }
+ 
+  &__link{
+    position: relative;
+  }
+  &__num{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: -9px;
+    right: -14px;
+    border-radius: 50%;
+    font-size: 12px;
+    color: $accent;
+    line-height: 20px;
+    background-color: white;
+    text-align: center
+  }
+  &__link--line::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 32px;
+    background-color: white;
+    color: #fff;
+    right: 50px;
+    bottom: -7px;
+  }
+}
 
 
 
