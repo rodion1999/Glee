@@ -2,22 +2,30 @@ $link:#7b7b7b;
 $accent:#436372;
 
 %rubik-500{
-  font-family: 'Rubik-Medium';
+  font-family: 'Rubik-Medium',sans-serif;
   font-size: 500;
 }
 %rubik-400{
-  font-family: 'Rubik-Regular';
+  font-family: 'Rubik-Regular',sans-serif;
   font-size: 500;
 }
 %DMSans-700{
-font-family: 'DMSans-Bold' ;
+font-family: 'DMSans-Bold',sans-serif ;
 font-size: 700;
 }
 %DMSans-500{
-font-family: 'DMSans-Medium' ;
+font-family: 'DMSans-Medium',sans-serif ;
 font-size: 500;
 }
 %DMSans-400{
-font-family: 'DMSans-Regual' ;
+font-family: 'DMSans-Regual',sans-serif ;
 font-size: 400;
+}
+
+%title{
+    text-align: center;
+    color: #191919;
+    font-size: 36px;
+    @extend %DMSans-700;
+    margin-bottom: 25px;
 }

@@ -8,10 +8,45 @@ body{
  flex-direction: column;
 }
 .container {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.min-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
 .main{
   flex-grow: 1;
+}
+.breadcrumbs{
+  background-color: #edf1f4;
+  &__inner{
+    display: flex;
+    justify-content: center;
+  }
+  &__content{
+    padding: 35px 0;
+  }
+  &__title{
+    color: #222933;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  &__link{
+    font-size: 14px;
+    color: #a6aaaf;
+    display: inline-block ;
+    padding-left: 10px;
+    position: relative;
+    @extend %rubik-400;
+  }
+  &__link--line{
+    &::before {
+        content: '/';
+        position: absolute;
+        left: 0;
+      }
+  }
 }
