@@ -9,7 +9,7 @@
    @extend %rubik-500;
   &__inner{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
   
@@ -538,16 +538,6 @@
 }
 .articlse{
 padding: 100px 0 90px;
-position: relative;
-&::before{
-content: '';
-position: absolute;
-background-image: url('../images/articelse-bg.jpg');
-height: 437px;
-width: 100%;
-z-index: -1;
-bottom: 143px;
-}
 &__inner{
   display: flex;
   justify-content: space-between;
@@ -645,13 +635,106 @@ bottom: 143px;
   }
 
 }
-.articlse-partners{
-  padding: 100px  90px;
+.partners{
+  padding-bottom: 90px;
+  position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/articelse-bg.jpg');
+      height: 437px;
+      width: 100%;
+      z-index: -1;
+      bottom: 33px;
+    }
   &__list{
     display: flex;
     align-items: center;
     justify-content: space-around
   }
+}
+.login{
+  padding: 118px 0 118px;
+  font-size: 14px;
+  @extend %rubik-400;
+  color: #436372;
+  &__inner{
+    display: flex;
+    justify-content: center;
+  }
+  &__form{
+    width: 470px;
+  }
+  &__text{
+    display: block;
+    margin-bottom: 15px;
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+    height: 50px;
+    border: 2px solid #f6f6f6;
+  }
+  &__btn-log{
+    width: 100%;
+    border: none;
+    background-color: #a3bbc8;
+    color: #fff;
+    font-size: 18px;
+    @extend %rubik-500;
+    padding: 22px 0;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  &__form-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #f6f6f6;
+  }
+  &__link-box{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  &__link{
+    color: inherit;
+    font-size: inherit;
+    font-style: inherit;
+  }
+  &__btn-acc{
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+    background-color: inherit;
+    padding: 22px 0;
+    font-size: 18px;
+    @extend %rubik-500;
+    color: #243f4d;
+    border: 2px solid #a3bbc8;
+    cursor: pointer;
+  }
+  &__checkbox-wrraper{
+    display: flex;
+    align-items: center;
+  }
+}
+.jq-checkbox {
+  border: none;
+}
+
+.jq-checkbox,
+.jq-radio {
+  box-shadow: none;
+  vertical-align: none;
+  width: 15px;
+  height: 15px;
+  margin-right:10px ;
+  background: none;
+  background-color: #ebebeb;
 }
 
 
